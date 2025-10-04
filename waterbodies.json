@@ -1,0 +1,22 @@
+[
+  {"name": "Vembanad Lake", "state": "Kerala", "lat": 9.55, "lon": 76.49, "risk": "high"},
+  {"name": "Chilika Lake", "state": "Odisha", "lat": 19.72, "lon": 85.35, "risk": "medium"},
+  {"name": "Hussain Sagar", "state": "Telangana", "lat": 17.42, "lon": 78.47, "risk": "low"},
+  {"name": "Dal Lake", "state": "Jammu & Kashmir", "lat": 34.10, "lon": 74.85, "risk": "medium"},
+  {"name": "Sardar Sarovar Reservoir", "state": "Gujarat", "lat": 22.77, "lon": 73.80, "risk": "high"},
+  {"name": "Sambhar Salt Lake", "state": "Rajasthan", "lat": 26.95, "lon": 75.11, "risk": "low"},
+  {"name": "Bhoj Wetland", "state": "Madhya Pradesh", "lat": 23.27, "lon": 77.41, "risk": "medium"},
+  {"name": "Pong Dam Reservoir", "state": "Himachal Pradesh", "lat": 32.30, "lon": 76.10, "risk": "high"},
+  {"name": "Chandigarh Sukhna Lake", "state": "Chandigarh", "lat": 30.74, "lon": 76.78, "risk": "low"},
+  {"name": "Loktak Lake", "state": "Manipur", "lat": 24.5, "lon": 93.78, "risk": "high"},
+  {"name": "Wular Lake", "state": "Jammu & Kashmir", "lat": 34.2, "lon": 74.55, "risk": "medium"},
+  {"name": "Ashti Lake", "state": "Maharashtra", "lat": 18.8, "lon": 73.8, "risk": "medium"},
+  {"name": "Bhimtal Lake", "state": "Uttarakhand", "lat": 29.38, "lon": 79.57, "risk": "low"},
+  {"name": "Sardar Sarovar Dam", "state": "Madhya Pradesh", "lat": 22.77, "lon": 73.80, "risk": "high"},
+  {"name": "Sambalpur Reservoir", "state": "Odisha", "lat": 21.47, "lon": 83.97, "risk": "low"},
+  {"name": "Gobind Sagar", "state": "Himachal Pradesh", "lat": 31.65, "lon": 76.40, "risk": "medium"},
+  {"name": "Chilika Lake", "state": "Odisha", "lat": 19.72, "lon": 85.35, "risk": "medium"},
+  {"name": "Barapani Reservoir", "state": "Meghalaya", "lat": 25.5, "lon": 91.88, "risk": "low"},
+  {"name": "Sambhar Lake", "state": "Rajasthan", "lat": 26.95, "lon": 75.11, "risk": "high"},
+  {"name": "Umiam Lake", "state": "Meghalaya", "lat": 25.67, "lon": 91.88, "risk": "medium"}
+]

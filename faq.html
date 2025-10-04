@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frequently Asked Questions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts/faq.js" defer></script>
+</head>
+
+<body class="theme-faq">
+    <header>
+        <h1>Frequently Asked Questions</h1>
+        <p>Your common questions about Naegleria fowleri answered</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="symptoms.html">Symptoms</a>
+            <a href="prevention.html">Prevention</a>
+            <a href="risk_checker.html">Risk Checker</a>
+            <a href="data_maps.html">Data & Maps</a>
+            
+            <a href="notifications.html">Alerts</a>
+            <a href="news.html">News</a>
+            <a href="faq.html" class="active-tab">FAQ</a>
+        </nav>
+    </header>
+    <main class="content">
+        <h2>Common Questions</h2>
+        <div class="faq-accordion">
+            <div class="faq-item">
+                <button class="faq-question">
+                    <h3>Can I get infected by drinking contaminated water?</h3>
+                    <span class="faq-arrow">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>No. You can only be infected when contaminated water goes up your nose. Swallowing the amoeba is not harmful as stomach acid kills it.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <h3>How common are infections from Naegleria fowleri?</h3>
+                    <span class="faq-arrow">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Infections are extremely rare. In the United States, for example, there are only a handful of cases reported each year. However, the infection is so deadly that prevention is very important.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <h3>Can I get infected in a properly maintained swimming pool or water park?</h3>
+                    <span class="faq-arrow">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>It is very unlikely. Standard levels of chlorine and disinfection in swimming pools and water parks are effective at killing Naegleria fowleri.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">
+                    <h3>Is Naegleria fowleri found in salt water like the ocean?</h3>
+                    <span class="faq-arrow">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>No, it is a freshwater amoeba and cannot survive in salt water.</p>
+                </div>
+            </div>
+        </div>
+
+        <section class="ask-question-section">
+            <h2>Have a Different Question?</h2>
+            <p style="text-align: center; max-width: 600px; margin: auto; margin-bottom: 2rem;">
+                If your question wasn't answered above, feel free to ask it here. Our team will review submissions and update the FAQ.
+            </p>
+            <form id="faqForm" onsubmit="handleQuestionSubmit(event)">
+                <label for="userEmail">Your Email (Optional)</label>
+                <input type="email" id="userEmail" placeholder="you@example.com" />
+                <label for="userQuestion">Your Question</label>
+                <textarea id="userQuestion" rows="5" required placeholder="Type your question here..."></textarea>
+                <button class="btn" type="submit">Submit Question</button>
+            </form>
+            <div id="formConfirmation" class="form-confirmation"></div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Amoeba Awareness Project. Knowledge is Power.</p>
+    </footer>
+    <script>
+        function handleQuestionSubmit(event) {
+            event.preventDefault();
+            const form = document.getElementById('faqForm');
+            const confirmationDiv = document.getElementById('formConfirmation');
+            confirmationDiv.innerText = 'Thank you! Your question has been submitted for review.';
+            confirmationDiv.style.display = 'block';
+            form.reset();
+            setTimeout(() => { confirmationDiv.style.display = 'none'; }, 6000);
+        }
+    </script>
+</body>
+
+</html>

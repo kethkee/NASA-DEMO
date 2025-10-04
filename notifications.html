@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proactive Alert System</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="theme-notifications">
+    <div id="notificationBanner" class="notification-banner">
+        <span class="notification-icon">⚠️</span>
+        <div class="notification-text">
+            <strong>High-Risk Area Alert</strong>
+            <p>You have entered an area with a known high-risk waterbody. Tap for details.</p>
+        </div>
+        <span class="notification-close" onclick="closeNotification()">&times;</span>
+    </div>
+    <header>
+        <h1>Proactive Alert System</h1>
+        <p>Get automatic safety notifications on your mobile device</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="symptoms.html">Symptoms</a>
+            <a href="prevention.html">Prevention</a>
+            <a href="risk_checker.html">Risk Checker</a>
+            <a href="data_maps.html">Data & Maps</a>
+           
+            <a href="notifications.html" class="active-tab">Alerts</a>
+            <a href="news.html">News</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+    </header>
+    <main class="content">
+        <section class="live-map-section">
+            <h2>Simulate an Alert</h2>
+            <p style="text-align: center; max-width: 600px; margin: auto; margin-bottom: 2rem;">
+                Click the button below to see a simulation of the kind of push notification you would receive upon
+                entering a dangerous area.
+            </p>
+            <div class="buttons">
+                <button class="btn btn-secondary" onclick="showNotification()">Simulate Entering Hotspot</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Amoeba Awareness Project. Proactive Protection, Anywhere You Go.</p>
+    </footer>
+    <script>
+        const banner = document.getElementById('notificationBanner');
+        function showNotification() { banner.classList.add('show'); setTimeout(() => { closeNotification(); }, 8000); }
+        function closeNotification() { banner.classList.remove('show'); }
+    </script>
+</body>
+
+</html>
